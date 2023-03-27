@@ -1,0 +1,165 @@
+#VRML V2.0 utf8
+# Created with V-Realm Builder v2.0
+# Integrated Data Systems Inc.
+# www.ids-net.com
+
+Viewpoint {
+  description "Far View"
+  position 0 0 20
+  orientation 0 0 1 3.14159
+  fieldOfView 1.49
+}
+DEF stator Transform {
+  translation 0.13656 0.71251 15.7769
+  scale 0.743683 0.743636 0.743643
+  rotation -0.211856 0.716214 0.664947 2.74095
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.8 0 0.8
+        }
+      }
+      geometry Cylinder {
+      }
+    }
+    DEF vent Transform {
+      translation -0.0255832 -1.94332 1.72991e-06
+      children Shape {
+        appearance Appearance {
+          material Material {
+            diffuseColor 0.4 1 1
+          }
+        }
+        geometry Extrusion {
+          scale [
+            1 1,
+            1 1 
+          ]
+          orientation [
+            0 0 1 0,
+            0 0 1 0 
+          ]
+          crossSection [
+            1 -2.44921e-16,
+            0.932472 -0.361242,
+            0.739009 -0.673696,
+            0.445738 -0.895164,
+            0.0922675 -0.995734,
+            -0.273664 -0.961825,
+            -0.602635 -0.798017,
+            -0.850218 -0.526432,
+            -0.982973 -0.183749,
+            -0.982973 0.18375,
+            -0.850217 0.526433,
+            -0.602634 0.798018,
+            -0.273663 0.961826,
+            0.0922688 0.995734,
+            0.445739 0.895163,
+            0.739009 0.673695,
+            0.932472 0.361241,
+            1 -2.44921e-16 
+          ]
+        }
+      }
+    }
+    DEF rotor Transform {
+      translation -0.00566937 1.16542 0.0241059
+      scale 0.424111 0.424109 0.42411
+      rotation 0.999922 0.0124564 -0.000462941 3.13385
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              diffuseColor 0.205705 0.8 0.431689
+            }
+          }
+          geometry Cylinder {
+            radius 0.3
+          }
+        }
+        Transform {
+          translation -0.0284129 -0.645663 -0.939644
+          scale 0.766873 0.766852 0.766872
+          rotation -1 2.41041e-06 2.02758e-05 0.0883146
+          children Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.8 0.113509 0.144702
+              }
+            }
+            geometry Extrusion {
+              scale [
+                1 1,
+                1 1 
+              ]
+              orientation [
+                0 0 1 0,
+                0 0 1 0 
+              ]
+              crossSection [
+                0 1,
+                -1 -1,
+                1 -1,
+                0 1 
+              ]
+              ccw FALSE
+            }
+          }
+        }
+        Transform {
+          translation -0.00782871 0.244282 0.923811
+          scale 0.855654 0.85565 0.855663
+          rotation 1 1.31593e-06 2.95118e-07 3.14184
+          children Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.15309 0.292764 0.8
+              }
+            }
+            geometry Extrusion {
+              scale [
+                1 1,
+                1 1 
+              ]
+              orientation [
+                0 0 1 0,
+                0 0 1 0 
+              ]
+              crossSection [
+                0 1,
+                -1 -1,
+                1 -1,
+                0 1 
+              ]
+              ccw FALSE
+            }
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0.00639868 -0.265702 1.17
+      scale 1.21027 1.21013 1.21022
+      rotation 0.614929 0.56323 0.551936 4.16902
+      children Shape {
+        appearance Appearance {
+          material Material {
+            diffuseColor 0 0.4 0.4
+          }
+        }
+        geometry Box {
+          size 0.5 1.5 1.5
+        }
+      }
+    }
+  ]
+}
+Background {
+  topUrl "*sl3dlib/objects/Textures/General/Background_Stars_1.png" 
+  rightUrl "*sl3dlib/objects/Textures/General/Background_Stars_1.png" 
+  leftUrl "*sl3dlib/objects/Textures/General/Background_Stars_1.png" 
+  frontUrl "*sl3dlib/objects/Textures/General/Background_Stars_2.png" 
+  bottomUrl "*sl3dlib/objects/Textures/General/Background_Stars_2.png" 
+  backUrl "*sl3dlib/objects/Textures/General/Background_Stars_2.png" 
+}
